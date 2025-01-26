@@ -10,7 +10,7 @@ app.use(express.json());
 app.use("/email" , Email)
 
 app.get("/", (req: Request, res: Response) => {
-  res.send("Hello, Vercel!");
+  res.status(200).json({message:  "App Running written in Ts"});
 });
 
 app.listen(port, () => {
